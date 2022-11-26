@@ -1,0 +1,15 @@
+{
+    "name": "Auto skip!",
+    "description": "No need to click the skip ad button!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+      "48": "skip-icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
